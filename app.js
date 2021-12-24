@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded',()=>{
 const button1=document.getElementById('button1');
+const button2=document.getElementById('button2');
 button1.addEventListener('click',()=>{
   const sitton=document.getElementById('Sitton').value;
   const munda=document.getElementById('Munda').value;
@@ -48,6 +49,15 @@ button1.addEventListener('click',()=>{
     resultString += ` Club: ${ClubNo}` 
   }
   document.querySelector('h3').textContent=resultString;
+});
+
+button2.addEventListener('click',()=>{
+  document.getElementById('Sitton').value = "";
+  document.getElementById('Munda').value = "";
+  document.getElementById('Iska').value = "";
+  document.getElementById('Rohi').value = "";
+  document.getElementById('Dhandi').value = "";
+  document.getElementById('Hotton').value = "";
 });
 });
 
